@@ -37,10 +37,3 @@ How about something like this:
 ”I've installed Python 3.8 on my Mac using Homebrew but python3 keeps opening up version 3.6. Can anyone help me?”
 
 Python environments are notorious for growing complicated over time and this issue might take some time to sort out. Because the question is specific, it can still be answered quickly. The specificity allows you to set aside an appropriate amount of time to help solve the problem at hand.
-
-```javascript
-const name = () => {
-    console.log();
-}
-
-```

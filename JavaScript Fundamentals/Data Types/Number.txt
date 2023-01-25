@@ -1,0 +1,57 @@
+The Number Data Type
+The Number data type in JavaScript does exactly what you expect! It is used to represent any numerical value, including integers and decimal numbers. As one of our first data types, we'll be interested in what operations we can use with numbers.
+
+When you finish this article, you should be able to:
+
+predict the evaluation of arithmetic expressions
+explain the order of operations for JavaScript's arithmetic operators
+use the grouping operator, () ,to manipulate the order of operations in an expression
+All the numbers
+JavaScript's Number encompasses numerical values. All of the following values are examples of the number type:
+
+42;
+-5;
+3.14159;
+7.0;
+The basic arithmetic operators
+For any given data type, we're interested in what operations we can perform with that type. We use the word operator to refer to the symbol that performs a particular operation. For example, the + operator performs the addition operation. Here are the common arithmetic operators in JS, with their associated operation:
+
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)
+% (modulo)
+With number values and arithmetic operators in hand, we can evaluate our first expressions:
+
+console.log(2 + 3); // => 5
+console.log(42 - 42); // => 0
+console.log(-4 * 1.5); // => -6
+console.log(25 / 8); // => 3.125
+Nothing too groundbreaking about the results above. An expression consists of values and operators. JavaScript will evaluate an expression into a single value.
+
+We can write more complex expressions using multiple operators. However, we'll want to be aware of the general math order of operations. That is, we perform multiplication-division operations first and then addition-subtraction operations. To force a specific order of operation, we can use the grouping operator, ( ), around a part of the expression:
+
+console.log(5 * 3 + 2); // => 17
+console.log(2 + 3 * 5); // => 17
+console.log((2 + 3) * 5); // => 25
+If you need a refresher of the order of operations, visit Wikipedia.
+The remainder operator
+All of the math operators listed above are the simple operations you use everyday, except for maybe remainder %. This operator is referred to as "modulo" in some other programming languages. This gives us the remainder that results from a division. For example, 10 % 3 is 1 because when we divide 10 by 3, we are left with a remainder of 1. We can read 10 % 3 as "ten modulo three" or "ten mod three."
+
+console.log(10 % 3); // => 1
+console.log(14 % 5); // => 4
+console.log(20 % 17); // => 3
+console.log(18 % 6); // => 0
+console.log(7 % 9); // => 7
+This is a very useful operation in the realm of computers. We can use it to check the divisibility of numbers, whether numbers are even, whether they are prime, and much, much more. Don't take this seemingly simple operation for granted! We'll provide a ton of practice using these modulo patterns as we move through the course.
+
+In the order of operations, the modulo has the same precedence as multiplication-division. So our complete order of math operations in JS is parentheses, multiplication-division-modulo, addition-subtraction.
+
+// modulo has precedence over addition
+console.log(4 + 12 % 5); // => 6
+console.log((4 + 12) % 5); // => 1
+What you've learned
+The Number type is used to represent integer and decimal values
+The operators +, -, /, * perform the normal math operations of addition, subtraction, division, and multiplication respectively
+a % b returns the remainder when we divide a by b; we call this operation modulo
+JavaScript follows the usual mathematical order of operations and we can use the () to force precedence
